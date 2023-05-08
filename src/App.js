@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import holidy from './component/holidy';
+import hotel from './component/hotel';
+import weather from './component/weather';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      year :
+      <input type="text" placeholder="eg. 2019, 2022" id="year"></input>
+      <br/>
+      country :
+      <input type="text" placeholder="eg. CN, US" id="country"></input>
+      <br/>
+      <button onClick={holidy}>Search</button>
+      <table id="holidayTable"></table>
+
+      city :
+      <input type="text" placeholder='eg. new york' id="city"></input>
+      <br/>
+      <button onClick={hotel}>Hotel</button>
+      <button onClick={weather}>Weather</button>
+
+      <table id="hotelTable"></table>
+
+      <table id="weatherTable"></table>
+      
+    </>
+
   );
 }
 
