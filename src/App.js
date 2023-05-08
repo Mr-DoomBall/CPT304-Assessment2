@@ -17,6 +17,7 @@ function App() {
 
       city :
       <input type="text" placeholder='eg. new york' id="city"></input>
+      <input type="text" placeholder='eg. 2020-5-8' id="date"></input>
       <br/>
       <button onClick={hotel}>Hotel</button>
       <button onClick={weather}>Weather</button>
